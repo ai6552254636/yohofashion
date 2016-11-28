@@ -1,5 +1,7 @@
 package lanou.yoho.mainmenu.video;
 
+import android.view.View;
+
 import lanou.yoho.base.BaseFragment;
 
 /**
@@ -12,9 +14,10 @@ public class FragmentVideo extends BaseFragment{
     }
 
     @Override
-    protected void initViews() {
+    protected void initViews(View view) {
 
     }
+
 
     @Override
     protected void initData() {

@@ -1,5 +1,7 @@
 package lanou.yoho.mainmenu.community;
 
+import android.view.View;
+
 import lanou.yoho.base.BaseFragment;
 
 /**
@@ -12,9 +14,10 @@ public class FragmentCommunity extends BaseFragment {
     }
 
     @Override
-    protected void initViews() {
+    protected void initViews(View view) {
 
     }
+
 
     @Override
     protected void initData() {

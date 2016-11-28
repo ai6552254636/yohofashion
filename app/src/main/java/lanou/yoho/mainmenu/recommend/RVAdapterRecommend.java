@@ -11,12 +11,13 @@ import java.util.Date;
 
 import lanou.yoho.R;
 import lanou.yoho.bean.databean.RecommendBean;
+import lanou.yoho.bean.databean.bannerbeans.RecommendBannerBean;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
 import lanou.yoho.tools.CommonVH;
 
 /**
  * Created by dllo on 16/11/23.
- * 推荐页的适配器
+ * 推荐页RecyclerView的适配器
  */
 public class RVAdapterRecommend extends RecyclerView.Adapter {
 
@@ -30,6 +31,7 @@ public class RVAdapterRecommend extends RecyclerView.Adapter {
         this.recommendBeanArrayList = recommendBeanArrayList;
     }
 
+
     public void setOnRecyclerViewItemClickListener(OnRecyclerViewItemClickListener onRecyclerViewItemClickListener) {
         this.onRecyclerViewItemClickListener = onRecyclerViewItemClickListener;
         notifyDataSetChanged();
@@ -40,7 +42,7 @@ public class RVAdapterRecommend extends RecyclerView.Adapter {
     @Override
     public int getItemViewType(int position) {
         String title = recommendBeanArrayList.get(position).getTitle();
-        if (title == null) {
+        if (title != null) {
             return 0;     //对应的返回值给下面的缓存类调用即RecyclerView.ViewHolder
         }                  //0代表正常的前三个行布局   1代表不同的行布局
         return 1;
@@ -69,20 +71,21 @@ public class RVAdapterRecommend extends RecyclerView.Adapter {
 
 
 //        获取图片,标题栏,标题发布者
+//        recommendBeanArrayList.get(position).getTag().get(0)
         String imgUrl = recommendBeanArrayList.get(position).getImage();
         String title = recommendBeanArrayList.get(position).getTitle();
-        String source = recommendBeanArrayList.get(position).getTitleFont();
+        String source = recommendBeanArrayList.get(position).getTag().get(0).getTag_name();
 //        时间戳转换,发布日期
-//        SimpleDateFormat sdf = new SimpleDateFormat("yyyy - MM - dd HH:mm:ss");
-//        String finalTime = sdf.format(new Date (recommendBeanArrayList.
-//                get(position).getCreate_time()) );
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd");
+        String finalTime = sdf.format(new Date (recommendBeanArrayList.
+                get(position).getContentType()) );
 
         switch (type) {
             case 0:
                 commonVH.setImage(R.id.item_re_image,imgUrl);
                 commonVH.setText(R.id.item_re_title,title);
                 commonVH.setText(R.id.item_re_source,source);
-//                commonVH.setText(R.id.item_re_date,finalTime);
+                commonVH.setText(R.id.item_re_date,finalTime);
                 break;
             default:
 

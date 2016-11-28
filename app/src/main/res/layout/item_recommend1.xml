@@ -5,53 +5,74 @@
     android:layout_height="wrap_content"
     android:padding="10dp">
 
-    <ImageView
-        android:id="@+id/item_re_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
-        android:layout_gravity="center"
-        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal">
 
-    <RelativeLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
-        android:layout_height="match_parent"
-        android:layout_marginRight="10dp"
-        >
-        <TextView
-            android:id="@+id/item_re_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/colorBlack"
-            android:hint="title"
+        <ImageView
+            android:id="@+id/item_re_image"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"
             />
 
-        <!--左下行-->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="5dp"
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             >
             <TextView
-                android:id="@+id/item_re_source"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:hint="source"
-                />
-            <TextView
-                android:id="@+id/item_re_date"
+                android:id="@+id/item_re_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="date"
-                android:singleLine="true"
-                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"
+                android:hint="title"
                 />
-        </LinearLayout>
 
-    </RelativeLayout>
+            <!--左下行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="#  "
+                    android:textSize="10sp"
+                    android:textColor="@color/colorBlue"
+                    />
+
+                <TextView
+                    android:id="@+id/item_re_source"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:text="source"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorBlue"
+                    />
+                <TextView
+                    android:id="@+id/item_re_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="date"
+                    android:textSize="10sp"
+                    android:singleLine="true"
+                    android:layout_gravity="center"
+                    />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
 
 </LinearLayout>

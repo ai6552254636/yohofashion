@@ -19,7 +19,7 @@ public class CommonVH extends RecyclerView.ViewHolder{
     // 用他来存放所有的 View , key 就是 View 的 id
 
     private SparseArray<View> views;
-    private View itemView; // 行布局
+    private View itemView; // 行布局  视图
 
     public CommonVH(View itemView) {
         super(itemView);

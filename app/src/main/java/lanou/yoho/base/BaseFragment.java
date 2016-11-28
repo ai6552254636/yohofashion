@@ -39,7 +39,7 @@ public abstract class BaseFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        initViews();
+        initViews(view);
     }
 
     @Override
@@ -51,7 +51,7 @@ public abstract class BaseFragment extends Fragment {
 
     protected abstract int getLayout();
 
-    protected abstract void initViews();
+    protected abstract void initViews(View view);
 
     protected abstract void initData();
 
