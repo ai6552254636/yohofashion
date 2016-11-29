@@ -4,11 +4,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!--栏目标题包裹-->
+    <include layout="@layout/title_column"/>
     <!--栏目-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/fragment_column_recycler"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        >
     </android.support.v7.widget.RecyclerView>
 </LinearLayout>

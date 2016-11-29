@@ -1,6 +1,7 @@
 package lanou.yoho.tools;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.support.v7.widget.RecyclerView;
 import android.util.SparseArray;
 import android.view.LayoutInflater;
@@ -97,11 +98,21 @@ public class CommonVH extends RecyclerView.ViewHolder{
         return this;
     }
 
-    /** 显示圆形图片 */
+    /** 显示圆形图片  网络 */
     public CommonVH setCircleImage(final int imageViewId, String imgUrl) {
 
         ImageView imageView = getView(imageViewId);
         VolleySingleton.getInstance().getCircleImage(imgUrl,imageView);
+
+        return this;
+    }
+
+    /**加载本地圆形图片*/
+    public CommonVH setCircleImage(final int imageViewId, Bitmap bitmap) {
+
+        ImageView imageView = getView(imageViewId);
+        CircleDrawable drawable = new CircleDrawable(bitmap);
+        imageView.setImageDrawable(drawable);
 
         return this;
     }

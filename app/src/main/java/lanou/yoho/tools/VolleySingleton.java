@@ -97,7 +97,7 @@ public class VolleySingleton {
                 Bitmap bitmap = response.getBitmap();
                 if (bitmap == null) {
                     // 图片还在请求中, 先给一张默认的图片
-                    imageView.setImageResource(R.mipmap.ic_launcher);
+//                    imageView.setImageResource(R.mipmap.ic_launcher);
                 } else {
                     // 图片请求成功
                     // TODO  CircleDrawable为自定义的类 主要用Draw方法实现画圆

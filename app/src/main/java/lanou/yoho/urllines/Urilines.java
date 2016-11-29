@@ -6,7 +6,7 @@ import android.net.Uri;
  * Created by dllo on 16/11/22.
  * 栏目的所有接口
  */
-public class UriColumn {
+public class Urilines {
 
 //    推荐页的请求
     public static final String urllines1 = "http://new.yohoboys.com/yohoboyins/v5/channel/recommendList";
@@ -34,4 +34,7 @@ public class UriColumn {
     public static final String  URLCOLUMN_MENULINE = "http://new.yohoboys.com/yohoboyins/v5/channel/aggregationIndex";
     String key4 ="parameters";
     String values4 ="%7B%22startTime%22%3A%220%22%2C%22limit%22%3A%2212%22%2C%22platform%22%3A%224%22%2C%22curVersion%22%3A%225.0.5%22%2C%22authInfo%22%3A%7B%22udid%22%3A%220000000000000005158d5733dbef8e1%22%7D%2C%22locale%22%3A%22zh-Hans%22%2C%22lastTime%22%3A%220%22%2C%22udid%22%3A%220000000000000005158d5733dbef8e1%22%2C%22language%22%3A%22zh-Hans%22%7D&";
+
+//    球鞋大夫图片网络请求
+    public static final String URLCOLUMN_ICON = "\"http://img01.yohoboys.com/contentimg/2016/08/11/16/018305d86c1b6813f7599b04cf9ccd3975.jpg";
 }

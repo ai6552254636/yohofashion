@@ -1,17 +1,14 @@
 package lanou.yoho.mainmenu.recommend;
 
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -21,9 +18,7 @@ import com.youth.banner.BannerConfig;
 import com.youth.banner.Transformer;
 
 import java.util.ArrayList;
-import java.util.List;
 
-import lanou.yoho.MainActivity;
 import lanou.yoho.R;
 import lanou.yoho.base.BaseFragment;
 import lanou.yoho.bean.databean.RecommendBean;
@@ -33,7 +28,7 @@ import lanou.yoho.interfaces.GlideImageLoader;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
 import lanou.yoho.tools.VolleySingleton;
 import lanou.yoho.tools.gosntools.GsonRequest;
-import lanou.yoho.urllines.UriColumn;
+import lanou.yoho.urllines.Urilines;
 
 /**
  * Created by dllo on 16/11/23.
@@ -105,7 +100,7 @@ public class FragmentRecommend extends BaseFragment implements View.OnClickListe
      */
     private void gsonMethod () {
         mGsonRequest = new GsonRequest<RecommendBean>(RecommendBean.class,
-                UriColumn.urllines1, new Response.Listener<RecommendBean>() {
+                Urilines.urllines1, new Response.Listener<RecommendBean>() {
 
             @Override
             public void onResponse(RecommendBean response) {
@@ -141,7 +136,7 @@ public class FragmentRecommend extends BaseFragment implements View.OnClickListe
      * 轮播图的网络请求及设置(三方banner)
      */
     private void bannerNetworkRequest () {
-        sGsonRequest = new GsonRequest<RecommendBannerBean>(RecommendBannerBean.class, UriColumn.urllines2,
+        sGsonRequest = new GsonRequest<RecommendBannerBean>(RecommendBannerBean.class, Urilines.urllines2,
                 new Response.Listener<RecommendBannerBean>() {
                     @Override
                     public void onResponse(RecommendBannerBean response) {

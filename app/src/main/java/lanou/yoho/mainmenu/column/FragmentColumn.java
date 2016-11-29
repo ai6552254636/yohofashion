@@ -1,9 +1,13 @@
 package lanou.yoho.mainmenu.column;
 
+import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.android.volley.Response;
@@ -16,9 +20,10 @@ import lanou.yoho.base.BaseFragment;
 import lanou.yoho.bean.databean.databean.ColumnBean;
 import lanou.yoho.bean.databean.databean.CommentBean;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
+import lanou.yoho.tools.CircleDrawable;
 import lanou.yoho.tools.VolleySingleton;
 import lanou.yoho.tools.gosntools.GsonRequest;
-import lanou.yoho.urllines.UriColumn;
+import lanou.yoho.urllines.Urilines;
 
 /**
  * Created by dllo on 16/11/23.
@@ -28,6 +33,7 @@ public class FragmentColumn extends BaseFragment {
 
     private RecyclerView recyclerView;
     private RVAdapterColumn mAdapter; //RecyclerView适配器
+    private ImageView mIcon;
 
     @Override
     protected int getLayout() {
@@ -53,6 +59,9 @@ public class FragmentColumn extends BaseFragment {
      */
     private void initViewsId () {
         recyclerView = bindView(R.id.fragment_column_recycler);
+
+
+
     }
 
     /**
@@ -74,7 +83,7 @@ public class FragmentColumn extends BaseFragment {
      */
     private void titleMethod() {
         GsonRequest<CommentBean> sGsonRequest = new GsonRequest<CommentBean>
-                (CommentBean.class, UriColumn.URLCOLUMN_COMMENT, new Response.Listener<CommentBean>() {
+                (CommentBean.class, Urilines.URLCOLUMN_COMMENT, new Response.Listener<CommentBean>() {
                     @Override
                     public void onResponse(CommentBean response) {
                         Log.d("FragmentColumn", "球鞋大夫数据请求成功");
@@ -106,7 +115,7 @@ public class FragmentColumn extends BaseFragment {
      */
     private void gsonMethod() {
         GsonRequest mGsonRequest = new GsonRequest<ColumnBean>
-                (ColumnBean.class, UriColumn.URLCOLUMN_MENULINE, new Response.Listener<ColumnBean>() {
+                (ColumnBean.class, Urilines.URLCOLUMN_MENULINE, new Response.Listener<ColumnBean>() {
                     @Override
                     public void onResponse(ColumnBean response) {
                         Log.d("FragmentColumn", "栏目数据请求成功");

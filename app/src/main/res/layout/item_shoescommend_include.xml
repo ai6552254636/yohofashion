@@ -2,28 +2,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="135dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@color/colorWhite2"
+    >
+
+    <ImageView
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:background="@color/colorBlack3"
+        android:layout_gravity="center"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal">
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="15dp"
+            >
 
         <ImageView
             android:id="@+id/include_shoesiamge1"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
-            android:layout_gravity="center"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             />
-
+        </LinearLayout>
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
             >
             <TextView
                 android:id="@+id/include_shoes_netname1"
@@ -46,6 +67,7 @@
                     android:layout_height="wrap_content"
                     android:text="提问 : "
                     android:textSize="14sp"
+                    android:textStyle="bold"
                     android:textColor="@color/colorBlack2"
                     />
 
@@ -56,6 +78,7 @@
                     android:layout_height="wrap_content"
                     android:text="content"
                     android:textSize="14sp"
+                    android:singleLine="true"
                     />
 
             </LinearLayout>
@@ -67,17 +90,25 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:orientation="horizontal">
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingRight="15dp">
 
         <ImageView
             android:id="@+id/include_shoesiamge2"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:src="@mipmap/ic_launcher"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/docotor123"
             android:layout_gravity="center"
             />
+        </LinearLayout>
 
         <LinearLayout
             android:orientation="vertical"
@@ -85,13 +116,14 @@
             android:layout_weight="1"
             android:layout_height="match_parent"
             android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
             >
             <TextView
                 android:id="@+id/include_shoes_netname2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="14sp"
-                android:text="title"
+                android:text="球鞋大夫"
                 />
 
             <!--左下行-->
@@ -107,6 +139,7 @@
                     android:layout_height="wrap_content"
                     android:text="提问 : "
                     android:textSize="14sp"
+                    android:textStyle="bold"
                     android:textColor="@color/colorBlack2"
                     />
 
@@ -114,6 +147,7 @@
                     android:id="@+id/include_shoes_content2"
                     android:layout_width="0dp"
                     android:layout_weight="1"
+                    android:singleLine="true"
                     android:layout_height="wrap_content"
                     android:text="content"
                     android:textSize="14sp"
