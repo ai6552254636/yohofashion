@@ -10,8 +10,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 import lanou.yoho.R;
-import lanou.yoho.bean.databean.RecommendBean;
-import lanou.yoho.bean.databean.bannerbeans.RecommendBannerBean;
+import lanou.yoho.bean.databean.recommendbean.RecommendBean;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
 import lanou.yoho.tools.CommonVH;
 

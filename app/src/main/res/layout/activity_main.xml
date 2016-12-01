@@ -25,7 +25,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-
+        android:scrollX ="5dp"
+        android:scrollY = "5dp"
         android:background="@color/colorBlack"
         >
 
@@ -39,6 +40,7 @@
             android:text="推荐"
             android:gravity="center"
             android:textColor="@drawable/dcolor_texts"
+
             />
         <RadioButton
             android:id="@+id/mainrbtn_column"

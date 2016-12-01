@@ -1,4 +1,4 @@
-package lanou.yoho.bean.databean.databean;
+package lanou.yoho.bean.databean.columnbean;
 
 import java.util.List;
 

@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.text.method.HideReturnsTransformationMethod;
 import android.text.method.PasswordTransformationMethod;
 import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -24,7 +23,7 @@ import lanou.yoho.MainActivity;
 import lanou.yoho.R;
 import lanou.yoho.base.BaseActivity;
 
-import lanou.yoho.bean.databean.MyUserBean;
+import lanou.yoho.bean.toolsbean.MyUserBean;
 
 /**
  * Created by dllo on 16/11/25.

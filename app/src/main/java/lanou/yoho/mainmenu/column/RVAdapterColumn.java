@@ -13,8 +13,8 @@ import java.util.ArrayList;
 
 import lanou.yoho.R;
 import lanou.yoho.base.MyApp;
-import lanou.yoho.bean.databean.databean.ColumnBean;
-import lanou.yoho.bean.databean.databean.CommentBean;
+import lanou.yoho.bean.databean.columnbean.ColumnBean;
+import lanou.yoho.bean.databean.columnbean.CommentBean;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
 import lanou.yoho.tools.CommonVH;
 

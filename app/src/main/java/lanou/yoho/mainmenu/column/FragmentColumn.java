@@ -1,8 +1,5 @@
 package lanou.yoho.mainmenu.column;
 
-import android.content.res.Resources;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.util.Log;
@@ -17,10 +14,9 @@ import java.util.ArrayList;
 
 import lanou.yoho.R;
 import lanou.yoho.base.BaseFragment;
-import lanou.yoho.bean.databean.databean.ColumnBean;
-import lanou.yoho.bean.databean.databean.CommentBean;
+import lanou.yoho.bean.databean.columnbean.ColumnBean;
+import lanou.yoho.bean.databean.columnbean.CommentBean;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
-import lanou.yoho.tools.CircleDrawable;
 import lanou.yoho.tools.VolleySingleton;
 import lanou.yoho.tools.gosntools.GsonRequest;
 import lanou.yoho.urllines.Urilines;

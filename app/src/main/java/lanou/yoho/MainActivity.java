@@ -15,7 +15,9 @@ import android.widget.RadioGroup;
 import lanou.yoho.base.BaseActivity;
 import lanou.yoho.login.LoginActivity;
 import lanou.yoho.mainmenu.column.FragmentColumn;
+import lanou.yoho.mainmenu.magazine.FragmentMagazineParent;
 import lanou.yoho.mainmenu.recommend.FragmentRecommend;
+import lanou.yoho.mainmenu.video.FragmentVideoParent;
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
 
@@ -100,8 +102,10 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             case R.id.mainrbtn_community:
                 break;
             case R.id.mainrbtn_video:
+                transaction.replace(R.id.main_framelayout,new FragmentVideoParent());
                 break;
             case R.id.mainrbtn_magazine:
+                transaction.replace(R.id.main_framelayout,new FragmentMagazineParent());
                 break;
             default:
                 break;

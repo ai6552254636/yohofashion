@@ -1,4 +1,4 @@
-package lanou.yoho.bean.databean.bannerbeans;
+package lanou.yoho.bean.databean.bannerbean;
 
 import java.util.List;
 

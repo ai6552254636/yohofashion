@@ -1,4 +1,4 @@
-package lanou.yoho.bean.databean;
+package lanou.yoho.bean.databean.recommendbean;
 
 import java.util.List;
 

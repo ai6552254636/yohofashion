@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="15dp"
+    android:layout_marginLeft="15dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite2"
+        >
+    <ImageView
+        android:id="@+id/item_live_image"
+        android:layout_width="365dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/item_live_titletextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text = "测试标题"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#"
+            android:textColor="@color/colorBlue"
+            android:textSize="10sp"
+            />
+        <TextView
+            android:id="@+id/item_live_sourcetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="来源"
+            android:textSize="10sp"
+            android:textColor="@color/colorBlue"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/item_live_timetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:text="时间"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

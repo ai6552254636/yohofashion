@@ -21,9 +21,9 @@ import java.util.ArrayList;
 
 import lanou.yoho.R;
 import lanou.yoho.base.BaseFragment;
-import lanou.yoho.bean.databean.RecommendBean;
+import lanou.yoho.bean.databean.recommendbean.RecommendBean;
 
-import lanou.yoho.bean.databean.bannerbeans.RecommendBannerBean;
+import lanou.yoho.bean.databean.bannerbean.RecommendBannerBean;
 import lanou.yoho.interfaces.GlideImageLoader;
 import lanou.yoho.interfaces.OnRecyclerViewItemClickListener;
 import lanou.yoho.tools.VolleySingleton;
